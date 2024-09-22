@@ -16,7 +16,7 @@
 - Clone this repo:
 ```bash
 git clone https://github.com/Ukuer/PCE-Palm.git
-cd rpg-palm
+cd PCE-Palm
 ``` 
 - Install dependencies:
 `
