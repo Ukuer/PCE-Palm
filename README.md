@@ -30,13 +30,12 @@ You can find more details about the original code in the [RPG-Palm](https://gith
 - Download [pce-checkpoints](https://drive.google.com/file/d/1r_1vdrVaqrBjuBktBKaj5fEwIXzbka8s/view?usp=sharing), unzip it and place it in `./checkpoints `.
 - Download [CUT-checkpoints](https://drive.google.com/file/d/1epH7GV3g9fk4_RwOX8x-uMo5iKOlj0I4/view?usp=sharing), unzip it and place it in `./CUT/checkpoints `.
 
-- Then `bash ./inference.sh`
-- Noted that you should modify some contents in `./run_rpg.sh` to meet you requirements.
+- Then `bash ./inference.sh`. Noted that you should modify some contents in `./inference.sh` to meet you requirements.
 
 ## Model Training
 ### Tools
 - The proposed PCEM can be found in `./PCEM_numpy.py`. You can use it to get the PCE images from palmprint ROIs.
-- The propsoed LFEB can be found in `./LFEM_pytorch.py`. You can add it in your neural network.
+- The propsoed LFEB can be found in `./LFEM_pytorch.py`. You can add it in your network.
 - The improved bezier curves can be found in `./syn_bezier.py`. 
 
 ### Training 
@@ -51,10 +50,9 @@ The second stage is to train a generation model with paired PCE images and real 
     - Noted that set `--netG resnet_9blocks_lfeb`.
 
 - To train a generation model:
-    - train the model with paired PCE images and real palmprints.
-    - `bash run.sh`.
-    - To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/NAME/web/index.html`
-    - see [RPG-Palm](https://github.com/Ukuer/RPG-Palm) for more details.
+    - Train the model with paired PCE images and real palmprints.
+    - Then, `bash run.sh`.
+    - To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/NAME/web/index.html`. See [RPG-Palm](https://github.com/Ukuer/RPG-Palm) for more details.
     - Noted that we use the augmentation module from [Stylegan2-ADA](https://github.com/NVlabs/stylegan2-ada). If you have any dependencies issues, please refer to the [Stylegan2-ADA](https://github.com/NVlabs/stylegan2-ada) repository.
 
 ### Citation
