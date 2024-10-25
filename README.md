@@ -27,8 +27,8 @@ This code borrows heavily from the [RPG-Palm](https://github.com/Ukuer/RPG-Palm)
 You can find more details about the original code in the [RPG-Palm](https://github.com/Ukuer/RPG-Palm).
 
 ### Use a Pre-trained Model
-- Download [pce-checkpoints](https://drive.google.com/file/d/1r_1vdrVaqrBjuBktBKaj5fEwIXzbka8s/view?usp=sharing), unzip it and place it in `./checkpoints `.
-- Download [CUT-checkpoints](https://drive.google.com/file/d/1epH7GV3g9fk4_RwOX8x-uMo5iKOlj0I4/view?usp=sharing), unzip it and place it in `./CUT/checkpoints `.
+- Download [pce-checkpoints](https://drive.google.com/file/d/1epH7GV3g9fk4_RwOX8x-uMo5iKOlj0I4/view?usp=sharing), unzip it and place it in `./checkpoints `.
+- Download [CUT-checkpoints](https://drive.google.com/file/d/1r_1vdrVaqrBjuBktBKaj5fEwIXzbka8s/view?usp=sharing), unzip it and place it in `./CUT/checkpoints `.
 
 - Then `bash ./inference.sh`. Noted that you should modify some contents in `./inference.sh` to meet you requirements.
 

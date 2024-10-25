@@ -26,7 +26,7 @@ mkdir -p ./image_floder/palm/trainB
 
 # Second step: convert Bezier curves images to PCE images.
 cd ./CUT
-sh ./CUT/inference.sh ${NAME_ID} ${BATCH_SIZE}
+sh .inference.sh ${NAME_ID} ${BATCH_SIZE}
 cd ../
 
 # augmente PCE images through image transformation.
