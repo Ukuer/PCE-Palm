@@ -50,7 +50,7 @@ The second stage is to train a generation model with paired PCE images and real 
     - Noted that set `--netG resnet_9blocks_lfeb`.
 
 - To train a generation model:
-    - Train the model with paired PCE images and real palmprints.
+    - Perpare dataets: paired PCE images and real palmprints.
     - Then, `bash run.sh`.
     - To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/NAME/web/index.html`. See [RPG-Palm](https://github.com/Ukuer/RPG-Palm) for more details.
     - Noted that we use the augmentation module from [Stylegan2-ADA](https://github.com/NVlabs/stylegan2-ada). If you have any dependencies issues, please refer to the [Stylegan2-ADA](https://github.com/NVlabs/stylegan2-ada) repository.
