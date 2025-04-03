@@ -2,7 +2,7 @@
 **PCE-Palm: Palm Crease Energy based Two-stage Realistic Pseudo-palmprint Generation**
 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/28039)
 
-We strongly encourage you to follow up on our recent work [**Diff-Palm**](https://github.com/Ukuer/Diff-Palm)
+We strongly encourage you to follow up on our recent work [**Diff-Palm (CVPR-25) **](https://github.com/Ukuer/Diff-Palm)
 
 ## Example results
 <img src='imgs/pce-image.png' width=820>  
